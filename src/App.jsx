@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import { MDXEditor } from '@mdxeditor/editor/MDXEditor'
 import './App.css'
 
 function App() {
@@ -27,6 +28,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <div>
+        <MDXEditor markdown="# Hello world" />
+      </div>
     </>
   )
 }
